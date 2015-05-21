@@ -5,7 +5,7 @@
 #define MyAppVersion "1.0.1"
 #define MyAppPublisher "University of Girona"
 #define MyAppURL "http://imae.udg.edu/~xavierb/quoniam-terrain"
-#define MyAppExeName "Quoniam.exe"
+#define MyAppExeName "QuoniamTerrain.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -52,7 +52,6 @@ Source: "..\bin\win\release\Qt5Gui.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bin\win\release\Qt5OpenGL.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bin\win\release\Qt5Widgets.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bin\win\release\platforms\*"; DestDir: "{app}\platforms"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "..\bin\win\release\imageformats\*"; DestDir: "{app}\imageformats"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\shaders\*"; DestDir: "{app}\shaders"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: ".\redist\vcredist_x64.exe"; DestDir: {tmp}; Flags: deleteafterinstall
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
